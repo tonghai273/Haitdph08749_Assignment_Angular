@@ -16,7 +16,8 @@ import {ProductEditComponent} from './product-edit/product-edit.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import {IndexAdminComponent} from './index-admin/index-admin.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { AboutComponent } from './about/about.component';
+import {AboutComponent} from './about/about.component';
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { AboutComponent } from './about/about.component';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    Ng2SearchPipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -12,8 +12,9 @@ export class ShopComponent implements OnInit {
   constructor(private productServiceService: ProductServiceService) {
   }
 
+  searchText;
   pro: Product[];
-  page=1;
+  page = 1;
   pageSize = 12;
 
   ngOnInit(): void {

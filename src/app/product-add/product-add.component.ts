@@ -9,6 +9,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
+  url: string;
 
   constructor(private productServiceService: ProductServiceService,
               private router: Router) {
