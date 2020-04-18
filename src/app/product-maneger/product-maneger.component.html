@@ -4,7 +4,8 @@
   ><!-- Navbar Search-->
   <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
     <div class="input-group">
-      <input class="form-control" type="text" placeholder="Search for..." aria-label="Search"
+      <input class="form-control" type="search" name="search" [(ngModel)]="searchText"
+             placeholder="Search product by name,price or id" aria-label="Search"
              aria-describedby="basic-addon2"/>
       <div class="input-group-append">
         <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
@@ -36,7 +37,8 @@
             Dashboard</a
           >
           <div class="sb-sidenav-menu-heading">Interface</div>
-          <a class="nav-link collapsed" routerLink="/admin/addproduct" data-toggle="collapse" data-target="#collapseLayouts"
+          <a class="nav-link collapsed" routerLink="/admin/addproduct" data-toggle="collapse"
+             data-target="#collapseLayouts"
              aria-expanded="false" aria-controls="collapseLayouts"
           >
             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
@@ -93,7 +95,8 @@
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let product of pro | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+            <tr
+              *ngFor="let product of pro | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize | filter:searchText">
               <td>{{product.id}}</td>
               <td>{{product.name}}</td>
               <td>{{product.price}}</td>
