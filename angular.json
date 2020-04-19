@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "Haitdph08749": {
@@ -24,9 +24,30 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/dist/css/styles.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/login_overlay.css",
+              "src/assets/css/style6.css",
+              "src/assets/css/shop.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/style.css",
+              "src/assets/css/fontawesome-all.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/bootstrap.js",
+              "src/assets/js/easing.js",
+              "src/assets/js/move-top.js",
+              "src/assets/js/owl.carousel.js",
+              "src/assets/css/simplyCountdown.css",
+              "src/assets/js/simplyCountdown.js",
+              "src/assets/js/minicart.js",
+              "src/assets/js/demo1-search.js",
+              "src/assets/js/classie-search.js",
+              "src/assets/js/modernizr-2.6.2.min.js",
+              "src/assets/js/jquery-2.2.3.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +140,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "Haitdph08749"
 }

@@ -831,7 +831,7 @@ p.paragraph {
 }
 
 .about-left {
-    background: url(../images/ab.jpg)no-repeat 0px 0px;
+    /*background: url(../images/ab.jpg)no-repeat 0px 0px;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -845,7 +845,7 @@ p.paragraph {
 }
 
 .about-left.two {
-    background: url(../images/ab1.jpg)no-repeat 0px 0px;
+    /*background: url(../images/ab1.jpg)no-repeat 0px 0px;*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1219,7 +1219,7 @@ input#datepicker {
 }
 
 .text-box-light {
-    background: #FFF url("../images/calender.png") no-repeat 95% 50%;
+    /*background: #FFF url("../images/calender.png") no-repeat 95% 50%;*/
     cursor: pointer;
     position: relative;
 }
@@ -1237,7 +1237,7 @@ input#datepicker {
 }
 
 .payment-date-section {
-    background: url("../images/calender.png") no-repeat #fff 50%;
+    /*background: url("../images/calender.png") no-repeat #fff 50%;*/
 }
 
 .payment-sendbtns {
